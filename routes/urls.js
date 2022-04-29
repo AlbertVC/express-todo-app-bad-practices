@@ -10,7 +10,7 @@ router.get('/', toDoController.index)
 app.get(`${ENDPOINT_TEXT}`, toDoController.get)
 
 // create a task
-app.post(`${ENDPOINT_TEXT}/task`, toDoController.create)
+app.post(`${ENDPOINT_TEXT}`, toDoController.create)
 
 // delete a task
 app.delete(`${ENDPOINT_TEXT}/:id`, toDoController.delete)
